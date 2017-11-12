@@ -1,0 +1,56 @@
+@keyframes reverseRotataZ {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes reverseRotataZ {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+#musicControl {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  margin-top: 0;
+  display: inline-block;
+  z-index: 99999999
+}
+
+#musicControl a {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+  background: url('http://cms-bucket.nosdn.127.net/3e68bc93eba1452888bcc1330624e8fd20171030095318.png') no-repeat;
+  background-size: 100%;
+}
+
+#musicControl a audio {
+  width: 100%;
+}
+
+#musicControl a.stop {
+  background-position: left bottom;
+}
+
+#musicControl a.on {
+  background-position: 0px 1px;
+  animation: reverseRotataZ 2.4s linear infinite;
+  -webkit-animation: reverseRotataZ 2.4s linear infinite;
+}
+   

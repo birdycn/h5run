@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+ max-width: 600px; 
+  height: 100%;
+  margin: 0 auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.swiper-slide {
+  background-size: 100% 100%;
+  background-size: 100%;
+}
+
+.swiper-button-next {
+  background-image: url(http://birdycn.github.io/swiper/img/icon_up.png);
+  background-size: 100%;
+  top: 93%;
+  left: 50%;
+  margin-left: -15px;
+  animation: fadeInUp ease 1s both infinite;
+  -webkit-animation: fadeInUp ease 1s both infinite;
+}
+
+.modal {
+  top: 30%;
+}
